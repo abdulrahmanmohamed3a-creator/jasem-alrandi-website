@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { MessageSquare } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [view, setView] = useState('home');
@@ -107,6 +108,9 @@ export default function App() {
           box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
       `}</style>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
