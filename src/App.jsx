@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -107,6 +108,9 @@ export default function App() {
           box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
       `}</style>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
